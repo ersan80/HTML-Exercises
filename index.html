@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+
+        table {
+            background-color: yellow;
+
+            border-radius: 10px;
+            margin-left: 500px;
+            margin: auto;
+            
+
+        }
+            
+
+        table td {
+            color: rgb(124, 0, 128);
+            text-align: left;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: small;
+            font-style: italic;
+            font: bold;
+            border-radius: 2px;
+            
+        }
+
+        table td:hover {
+            background-color: green;
+        }
+
+        .resetsave {
+            text-align: center;
+        }
+
+        .resetsave:hover {
+            background-color: rgb(207, 51, 221);
+            font-style: italic;
+        }
+
+        #save:hover {
+
+            color: white;
+
+            background-color:red;
+
+        }
+
+        #reset:hover {
+
+            color: white;
+            background-color:green;
+
+        }
+
+        #submit:hover {
+
+            color: white;
+
+            background-color:blue;
+
+        }
+
+        .baslık h1 {
+            text-align: center;
+            width: 280px;
+            height: px;
+            margin-left: 34rem;
+            background-color: khaki;
+            border: 5px solid green;
+            border-radius: 5px;
+            color: red;
+            margin: auto;
+        
+        
+        }
+
+        body {
+            background-color: blanchedalmond;
+            background-image: url(./thumb2-website-neon-icon-4k-blue-background-neon-symbols-website.jpeg);
+        }
+
+        
+
+
+
+
+
+
+
+
+
+        
+    </style>
+</head>
+<body>
+    <body>
+        <div class="baslık">
+          <h1>Let's Get to Know You</h1>  
+        </div>
+        <hr>
+        <form action="#" method="get">
+        <table border="5">
+        <tr>
+            <td><label for="Name">Name</label></td>
+            <td colspan="1"><input type="text" name="name" id="name"></td>
+        </tr>
+        
+        <tr>
+            <td><label for="surname">Surname</label></td>
+            <td><input type="text" name="" id="surname" ></td>
+        </tr>
+        
+        <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="number" name="age" id="age" min="0" max="100" placeholder="Enter your age"></td>
+        </tr>
+        
+        <tr>
+            <td> <label for="image"></label> Add a picture</td>
+            <td><input type="file" name="image" id="image" value="Fİle"></td>
+        </tr>
+        
+        <tr>
+            <td>ID No</td>
+            <td><input type="text" name="id" id="id"></td>
+        </tr>
+        
+        <tr>
+            <td> <label for="gender">Gender</label></td>
+            <td>F<input type="radio" name="gender" id="gender" value="F" checked>
+            M<input type="radio" name="gender" id="gender1" value="M"></td>
+        </tr>
+        
+        <tr>
+            <td>Languages</td>
+            <td>English<input type ="checkbox" name="dil" id="dil" value="ingilizce">
+                Franch<input type="checkbox" name="dil1" id="dil1" value="fransızca">       
+                Spanish<input type="checkbox" name="dil2" id="dil2" value="japonca">       
+                       </td>
+            
+            <tr>
+                <td><label for="opinion">Your Opinion</label></td>
+                <td>
+                    <textarea name="opinion" id="opinion" placeholder="">Your Message...</textarea>
+                </td>    
+            </tr>
+        </tr>
+
+        <tr>
+            <td><label for="">Your education info</label></td>
+            <td>
+                <select name="degree" id="degree">
+
+                    <option value="MBA">MBA</option>
+                    <option value="Y.lisans">Y.lisans</option>
+                    <option value="lisans">Lisans</option>
+                    <option value="Lise">Lise</option>
+                    <option value="İlkokul">İlkokul</option>
+                </select>
+            </td>
+
+
+        </tr>
+        
+                    <tr>
+        <td class="resetsave" colspan="3">
+        <input type="submit" name="save" id="save" value="SAVE">
+        <input type="reset" name="reset" id="reset" value="RESET">
+        <input type="submit" name="submit" id="submit" value="SEND">
+
+        </td>
+        </tr>
+   
+    </table>
+    </form>
+</body>
+</html>
